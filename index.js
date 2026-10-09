@@ -63,7 +63,7 @@ async function ensureSessionFile() {
 }
 
 async function connectToWA() {
-  console.log("Connecting DANUWA-MD 🧬...");
+  console.log("Connecting PASIYA-MD 🧬...");
   const { state, saveCreds } = await useMultiFileAuthState(path.join(__dirname, '/auth_info_baileys/'));
   const { version } = await fetchLatestBaileysVersion();
 
