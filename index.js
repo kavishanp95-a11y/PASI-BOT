@@ -89,7 +89,7 @@ async function connectToWA() {
 
       const up = `PASIYA MD connected ✅\n\nPREFIX: ${prefix}`;
       await danuwa.sendMessage(ownerNumber[0] + "@s.whatsapp.net", {
-        image: { url: `.png?raw=true` image/file_00000000b60c8208b4a134cfa721dd2c.png,
+        image: { url: `.https://github.com/kavishanp95-a11y/PASI-BOT/commit/33b6a513a57f74211c41da546733b94fcc0dc7fb,
         caption: up
       });
 
