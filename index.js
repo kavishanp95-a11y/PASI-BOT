@@ -89,7 +89,7 @@ async function connectToWA() {
 
       const up = `PASIYA MD connected ✅\n\nPREFIX: ${prefix}`;
       await danuwa.sendMessage(ownerNumber[0] + "@s.whatsapp.net", {
-        image: { url: `https://github.com/DANUWA-MD/DANUWA-MD/blob/main/images/DANUWA-MD.png?raw=true` },
+        image: { url: `.png?raw=true` },
         caption: up
       });
 
@@ -101,9 +101,9 @@ async function connectToWA() {
     }
   });
 
-  danuwa.ev.on('creds.update', saveCreds);
+  PASIYA.ev.on('creds.update', saveCreds);
 
-  danuwa.ev.on('messages.upsert', async ({ messages }) => {
+  PASIYA.ev.on('messages.upsert', async ({ messages }) => {
     for (const msg of messages) {
       if (msg.messageStubType === 68) {
         await PASIYA.sendMessageAck(msg.key);
